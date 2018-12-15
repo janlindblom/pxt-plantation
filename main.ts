@@ -11,7 +11,7 @@ enum PlantationIcons {
 //% color=#B22222 weight=30
 namespace plantation {
     //% blockId="plantation_measure"
-    //% block="measure echo %echo|trig %trig"
+    //% block="measure moisture echo %echo|trig %trig"
     //% echo.fieldEditor="gridpicker" echo.fieldOptions.columns=4
     //% trig.fieldEditor="gridpicker" trig.fieldOptions.columns=4
     export function measure(echo: AnalogPin, trig: AnalogPin): number {
@@ -23,8 +23,8 @@ namespace plantation {
         return reading
     }
 
-    //% weight=50 blockGap=8
-    //% blockId=plantation_icon_image block="icon image %i"
+    //% blockGap=8
+    //% blockId=plantation_icon_image block="plantation icon %i"
     //% i.fieldEditor="dropdown"
     //% i.fieldOptions.columns="5"
     //% i.fieldOptions.width="380"
